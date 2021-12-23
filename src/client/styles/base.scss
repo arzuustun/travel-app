@@ -1,0 +1,69 @@
+$keycolor: rgb(211, 34, 93);
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 1500px;
+    margin: 1rem auto;
+}
+
+.section-head{
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+p {
+    margin: 1rem auto;
+}
+
+
+#submit:visited {
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+    font: 300 1rem "Roboto Slab", serif;
+
+}
+#submit:hover {
+    color: $keycolor;
+}
+strong{
+    color: $keycolor;
+    font-weight: bold;
+    font: 300 1rem "Roboto Slab", serif;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    padding: 5px;
+    flex: 50%;
+    justify-content: center;
+  }
+  .grid-item {
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+  }
+#results {
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  #weather {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  

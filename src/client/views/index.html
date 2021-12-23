@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel Planner</title>
+        <script type="text/javascript" src="../../../dist/main.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>
+               Travel Planner
+            </h1>
+        </header>
+
+        <main>
+            <section class="section-head">
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                   <div> My Trip To: <input id="cityname" type="text" name="input" value="" placeholder="My Trip To"> </div> 
+                    <div>Travel Date: <input id="date" type="date" name="input" value="" placeholder="Travel Date"> </div>   
+                    <input id="submit" type="submit" name="" value="Submit" onclick="return Client.handleSubmit(event)"
+                     onsubmit="return Client.handleSubmit(event)">
+                </form>
+            </section>
+
+            <section>
+                <div id="results">
+                <div class="grid-container"id="picture-container">
+                       
+                </div>
+                <div id="weather">
+
+                   
+                </div>
+            </div>
+            <div id="error"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Project by <a href="https://github.com/arzuustun" target="_blank">Arzu Üstün</a></p>
+            <p>Udacity Front End Web Developer</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+$keycolor: rgb(211, 34, 93);
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 40px;
+}
+h1 {
+    font: 800 2.5rem "Roboto Slab", serif;
+    text-decoration: underline overline $keycolor;
+}
+h2 {
+    font: 1000 1rem/3rem "Roboto Slab", serif;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+h3 {
+    font: 800 1.5rem"Roboto Slab", serif;
+    color: $keycolor;
+}

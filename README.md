@@ -19,9 +19,10 @@ User enters city name , selects date and than Webpage displays four day weather 
 2. Have your API credentials ready (sign up for one if needed) for Geonames, weatherbit, and pixabay
 3. Create a .env file on the root of the project and enter your ID and key :
     ```
-    geoNamesAPI_ID=**************************
-    weatherbitAPI_KEY=**************************
-    pixabayAPI_KEY=**************************
+    GEONAMES_API_KEY=**************************
+    WEATHERBIT_API_KEY=**************************
+    PIXABAY_API_KEY=**************************
+    SERVER_PORT=8081
     ```
 4. Run the build : 
     ```

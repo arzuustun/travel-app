@@ -11,7 +11,6 @@ async function pixabayData(geoLoc) {
 	})
 		.then((res) => res.json())
 		.then(async (res) => {
-			console.log("postDat apixabay", res);
 			let pictureHtml = `
 		<img class="grid-item" style="width:100%" src="${res.hits[0].webformatURL}"/>
 		<img class="grid-item" style="width:100%" src="${res.hits[1].webformatURL}"/>

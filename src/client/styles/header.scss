@@ -10,11 +10,33 @@ h1 {
 }
 h2 {
     font: 1000 1rem/3rem "Roboto Slab", serif;
-    margin: 20px;
-    padding: 10px;
+    margin: 2%;
+    padding: 2%;
     text-align: center;
 }
 h3 {
     font: 800 1.5rem"Roboto Slab", serif;
     color: $keycolor;
+}
+
+@media (min-width: 250px) and (max-width: 1357px) {
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 10px 40px;
+    }
+    h1 {
+        font: 400 2rem "Roboto Slab", serif;
+        text-decoration: underline overline $keycolor;
+    }
+    h2 {
+        font: 400 1rem "Roboto Slab", serif;
+        margin: 2%;
+        padding: 2%;
+        text-align: center;
+    }
+    h3 {
+        font: 300 1.5rem"Roboto Slab", serif;
+        color: $keycolor;
+    }
 }

@@ -11,7 +11,6 @@ async function weatherData(geoLoc) {
 	});
 	try {
 		const data = await postData.json(); // await response.json();
-		console.log("postDataweather", data);
 		let userDate = document.getElementById("date").value;
 		var today = new Date();
 		var dd = String(today.getDate()).padStart(2, "0");

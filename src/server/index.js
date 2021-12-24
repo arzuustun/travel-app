@@ -28,9 +28,7 @@ app.use(express.static("dist"));
 console.log(__dirname);
 
 const geoApiURL = "http://api.geonames.org/searchJSON";
-
 const weatherApiURL = "https://api.weatherbit.io/v2.0/forecast/daily";
-
 const pixabayURL = "https://pixabay.com/api/";
 
 console.log(`Your API key is ${GEONAMES_API_KEY}`);
